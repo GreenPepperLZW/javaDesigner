@@ -1,7 +1,7 @@
 package com.lzw.pattern.工厂模式_2.demo;
 
 /**
- * 测试类，点咖啡
+ * 优化前测试类，点咖啡
  *
  * @author : lzw
  * @date : 2021/12/24
