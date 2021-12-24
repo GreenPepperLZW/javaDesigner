@@ -7,6 +7,8 @@ import com.lzw.principles.合成复用原则.demo2.service.impl.Red;
 import com.lzw.principles.合成复用原则.demo2.service.impl.White;
 
 /**
+ * 优化后测试类
+ * 每添加一种新的能源汽车，只需要添加一个子类即可
  * @author : lzw
  * @date : 2021/12/23
  * @since : 1.0

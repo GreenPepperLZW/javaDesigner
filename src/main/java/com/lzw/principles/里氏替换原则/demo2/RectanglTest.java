@@ -1,7 +1,7 @@
 package com.lzw.principles.里氏替换原则.demo2;
 
 /**
- * 测试类
+ * 优化后测试类
  *
  * @author : lzw
  * @date : 2021/12/22

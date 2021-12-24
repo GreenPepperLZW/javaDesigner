@@ -9,7 +9,7 @@ import com.lzw.principles.依赖倒转原则.demo2.service.impl.XiJieHardDisk;
 
 
 /**
- * 组装电脑
+ * 优化后测试，组装电脑
  * @author : lzw
  * @date : 2021/12/22
  * @since : 1.0
