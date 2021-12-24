@@ -16,7 +16,24 @@ import com.lzw.pattern.工厂模式_2.简单工厂模式.child.LatteCoffee;
  */
 public class SimpleCoffeeFactory {
 
-    public Coffee createCoffee(String type) {
+    /*public Coffee createCoffee(String type) {
+        Coffee coffee = null;
+        if ("american".equals(type)) {
+            coffee = new AmericanCoffee();
+        } else if ("latte".equals(type)) {
+            coffee = new LatteCoffee();
+        } else {
+            throw new RuntimeException("咖啡不存在");
+        }
+        return coffee;
+    }*/
+
+    /**
+     * 静态工厂
+     * @param type
+     * @return
+     */
+    public static Coffee createCoffee(String type) {
         Coffee coffee = null;
         if ("american".equals(type)) {
             coffee = new AmericanCoffee();
