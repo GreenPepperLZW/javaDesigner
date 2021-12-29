@@ -15,5 +15,13 @@ public class ClientTest {
         SellTickets proxyObject = proxyFactory.getProxyObject();
         // 执行买票的方法
         proxyObject.sell();
+
+        // 获取代理类的名称
+        System.out.println(proxyFactory.getClass());
+
+        // 让程序一直运行，代理类是在内存中动态生成的，内存结束，内存会被释放
+        /*while (true) {
+
+        }*/
     }
 }
