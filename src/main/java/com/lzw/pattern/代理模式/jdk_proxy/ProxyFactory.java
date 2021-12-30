@@ -1,7 +1,5 @@
 package com.lzw.pattern.代理模式.jdk_proxy;
 
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 /**
