@@ -8,7 +8,7 @@ import java.lang.reflect.Method;
 
 /**
  * 代理工厂对象，用来获取代理对象
- * cglib获取的代理对象是目标类的字类
+ * cglib获取的代理对象是目标类的子类
  *
  * @author : lzw
  * @date : 2021/12/29
