@@ -14,6 +14,7 @@ import javafx.scene.input.Mnemonic;
  * 树枝节点（Composite）：定义树枝节点的行为，存储子节点，组合树枝节点和叶子节点形成一个树形结构。
  * 叶子节点（Leaf）：叶子节点对象，其下再无分支，是系统层次遍历的最小单位。
  * </p>
+ * 可以在一定场景下取代递归查询
  *
  * @author : lzw
  * @date : 2022/1/5
@@ -39,23 +40,23 @@ public class ClientTest {
          *       修改角色
          */
         // 创建菜单树
-        MenuComponent menu1 = new Menu("菜单管理",2);
-        menu1.add(new MenuItem("页面访问",3));
-        menu1.add(new MenuItem("展开菜单",3));
-        menu1.add(new MenuItem("编辑菜单",3));
-        menu1.add(new MenuItem("页面访问",3));
-        menu1.add(new MenuItem("删除菜单",3));
-        menu1.add(new MenuItem("新增菜单",3));
-        MenuComponent menu2 = new Menu("权限管理",2);
-        menu2.add(new MenuItem("页面访问",3));
-        menu2.add(new MenuItem("提交保存",3));
-        MenuComponent menu3 = new Menu("角色管理",2);
-        menu3.add(new MenuItem("页面访问",3));
-        menu3.add(new MenuItem("新增角色",3));
-        menu3.add(new MenuItem("修改角色",3));
+        MenuComponent menu1 = new Menu("菜单管理", 2);
+        menu1.add(new MenuItem("页面访问", 3));
+        menu1.add(new MenuItem("展开菜单", 3));
+        menu1.add(new MenuItem("编辑菜单", 3));
+        menu1.add(new MenuItem("页面访问", 3));
+        menu1.add(new MenuItem("删除菜单", 3));
+        menu1.add(new MenuItem("新增菜单", 3));
+        MenuComponent menu2 = new Menu("权限管理", 2);
+        menu2.add(new MenuItem("页面访问", 3));
+        menu2.add(new MenuItem("提交保存", 3));
+        MenuComponent menu3 = new Menu("角色管理", 2);
+        menu3.add(new MenuItem("页面访问", 3));
+        menu3.add(new MenuItem("新增角色", 3));
+        menu3.add(new MenuItem("修改角色", 3));
 
         // 创建一级菜单
-        MenuComponent menu = new Menu("系统管理",1);
+        MenuComponent menu = new Menu("系统管理", 1);
         // 将二级菜单添加到一级菜单下
         menu.add(menu1);
         menu.add(menu2);
