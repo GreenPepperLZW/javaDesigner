@@ -32,5 +32,6 @@ public class OrderCommand implements Command {
         System.out.println("开始制作" + order.getDiningTabel()+"桌子订单");
         Map<String, Integer> foodDir = order.getFoodDir();
         // 遍历map集合
+
     }
 }
