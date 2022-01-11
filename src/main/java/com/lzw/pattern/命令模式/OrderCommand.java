@@ -1,8 +1,5 @@
 package com.lzw.pattern.命令模式;
 
-import com.lzw.pattern.策略模式.Strategy;
-
-import java.util.Map;
 import java.util.Set;
 
 /**
@@ -30,14 +27,13 @@ public class OrderCommand implements Command {
     }
 
     @Override
-
     public void execute() {
-        System.out.println("开始制作" + order.getDiningTabel()+"桌子订单");
+        System.out.println("开始制作" + order.getDiningTabel() + "桌子订单");
 
         Set<String> keys = order.getFoodDir().keySet();
         for (String key : keys) {
-            receiver.makeFood(key,order.getFoodDir().get(key));
+            receiver.makeFood(key, order.getFoodDir().get(key));
         }
-        System.out.println(order.getDiningTabel()+ "桌的饭弄好了");
+        System.out.println(order.getDiningTabel() + "桌的饭弄好了");
     }
 }

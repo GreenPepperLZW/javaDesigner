@@ -5,6 +5,7 @@ import java.util.List;
 
 /**
  * 服务员类
+ * 调用者/请求者（Invoker）角色
  *
  * @author : lzw
  * @date : 2022/1/10
